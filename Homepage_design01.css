@@ -36,7 +36,7 @@ div.maincontent {
     background-color: rgb(231, 81, 119);
     color: whitesmoke;
     grid-area: maincontent;
-    padding: 15px;
+    padding: 21px;
 }
 
 div.footer {
