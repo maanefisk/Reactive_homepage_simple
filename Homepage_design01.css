@@ -1,24 +1,48 @@
+
 body {
     padding: 0;
     margin: 0;
 }
 
 div.page {
-
+height: 100vh;
+display: grid;
+grid-template-columns: 150px 1fr;
+grid-template-rows: 120px 10fr 20px;
+grid-template-areas: 'header header'
+                    'menu maincontent'
+                    'menu footer';
 }
 
 div.header {
-
+background-color: rgb(189, 0, 57);
+color: whitesmoke;
+text-align: center;
+grid-area: header;
+font-size: 40px;
+padding: 50px;
 }
 
 div.menu {
-
+    background-color: pink;
+    color: whitesmoke;
+    grid-area: menu;
+    padding-top: 10%;
+    padding-left: 10%;
+    line-height: 1.9;
 }
 
 div.maincontent {
-
+    background-color: rgb(231, 81, 119);
+    color: whitesmoke;
+    grid-area: maincontent;
+    padding: 15px;
 }
 
 div.footer {
-    
+    background-color: rgb(255, 116, 128);
+    color: whitesmoke;
+    padding-right: 15px;
+    text-align: right;
+grid-area: footer;
 }
